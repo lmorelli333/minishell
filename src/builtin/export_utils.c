@@ -37,7 +37,7 @@ int	uguallen(char *str)
 void	show_export_error(char *arg)
 {
 	g_last_exit_status = 1;
-	ft_putstr_fd("kitty shell:", 2);
+	ft_putstr_fd("minishell:", 2);
 	ft_putstr_fd(" export: '", 2);
 	ft_putstr_fd(arg, 2);
 	ft_putstr_fd("': not a valid identifier\n", 2);

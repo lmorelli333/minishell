@@ -15,7 +15,7 @@
 void	show_cd_error(char *cmd2, char *error)
 {
 	g_last_exit_status = 1;
-	ft_putstr_fd("kitty shell: cd: ", 2);
+	ft_putstr_fd("minishell: cd: ", 2);
 	ft_putstr_fd(cmd2, 2);
 	ft_putstr_fd(": ", 2);
 	ft_putstr_fd(error, 2);

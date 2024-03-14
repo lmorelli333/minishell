@@ -22,7 +22,7 @@ char	**matrix_newline(char **matrix, char *str)
 	if (!newmatrix)
 	{
 		g_last_exit_status = 1;
-		ft_putstr_fd("kitty shell: error while allocating memory\n", 2);
+		ft_putstr_fd("minishell: error while allocating memory\n", 2);
 	}
 	len = 0;
 	while (matrix[len] != NULL)

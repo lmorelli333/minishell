@@ -40,7 +40,7 @@ void	hd_son_routine(t_lex *node, t_general *general, int file)
 		{
 			free(str);
 			g_last_exit_status = 1;
-			ft_printf("> kitty shell: warning: here-document \
+			ft_printf("> minishell: warning: here-document \
 delimited by end-of-file\n");
 			exit(g_last_exit_status);
 		}

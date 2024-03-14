@@ -21,6 +21,6 @@ void	handle_pwd(void)
 	else
 	{
 		g_last_exit_status = 1;
-		ft_putstr_fd("kitty shell: error while getting current directory\n", 2);
+		ft_putstr_fd("minishell: error while getting current directory\n", 2);
 	}
 }

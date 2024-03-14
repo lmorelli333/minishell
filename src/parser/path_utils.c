@@ -15,7 +15,7 @@
 void	show_quotes_error(char *word)
 {
 	g_last_exit_status = 1;
-	ft_putstr_fd("kitty shell: you didn't close the ", 2);
+	ft_putstr_fd("minishell: you didn't close the ", 2);
 	if (word[0] == '\'')
 		ft_putstr_fd("\'\n", 2);
 	else
@@ -54,7 +54,7 @@ int	handle_quotes(char *word)
 void	show_pathfinder_error(char *command)
 {
 	g_last_exit_status = 127;
-	ft_putstr_fd("kitty shell: ", 2);
+	ft_putstr_fd("minishell: ", 2);
 	ft_putstr_fd(command, 2);
 	ft_putstr_fd(": ", 2);
 	ft_putstr_fd("command not found \n", 2);
