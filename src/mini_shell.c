@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mini_shell.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcardina <jcardina@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: lmorelli <lmorelli@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 16:17:29 by jcardina          #+#    #+#             */
-/*   Updated: 2024/02/09 22:29:48 by jcardina         ###   ########.fr       */
+/*   Updated: 2024/03/14 13:42:14 by lmorelli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	init(t_general *general, char **envp)
 	general->enexp = matrix_dup(general->envp2);
 	general->path = NULL;
 	general->save_exit_status = 0;
-	printf(PINK"\n%s\n", INTRO);
-	printf("\n%s\n"RESET, HELLO2);
+	printf(RED"\n%s\n", INTRO);
+	printf("\n%s\n"RESET, HELLO);
 }
 
 void	handle_sigint(int sig)
@@ -62,7 +62,7 @@ int	main(int ac, char **av, char **envp)
 	while (1)
 	{
 		g_last_exit_status = 0;
-		general.args = readline(YELLOW "kitty shell> " RESET);
+		general.args = readline(YELLOW "minishell> " RESET);
 		if (general.args == NULL)
 		{
 			ft_printf("exit\n");
